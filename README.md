@@ -3,4 +3,3 @@
 # 1. current time of the city;
 # 2. current temperature of the city;
 # 3. information about condition, wind, pressure, description and humidity;
-# Images always change depended on weather condition;
