@@ -3,3 +3,6 @@
 # 1. current time of the city;
 # 2. current temperature of the city;
 # 3. information about condition, wind, pressure, description and humidity;
+
+![tbilisiweather](https://user-images.githubusercontent.com/91366004/178068875-318beffb-8d6d-4343-8c65-e642968171f8.PNG)
+![paris_weather](https://user-images.githubusercontent.com/91366004/178068887-caa3afd1-1952-4d9a-bdd4-9c21bc732160.PNG)
