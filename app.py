@@ -109,7 +109,7 @@ search_input.place(x=40, y=30)
 search_input.focus()
 
 search_icon = PhotoImage(file='images/search_icon.png')
-search_button = Button(image=search_icon, bg='#404040', activebackground='#404040', border=0, cursor='hand2', command=getting_weather)
+search_button = Button(image=search_icon, bg='#404040', activebackground='#404040', border=0, cursor='hand2',command=getting_weather)
 search_button.place(x=390, y=23)
 
 # Logo
