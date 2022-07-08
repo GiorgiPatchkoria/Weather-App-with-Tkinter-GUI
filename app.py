@@ -16,7 +16,7 @@ from PIL import ImageTk
 app = Tk()
 app.title('Weather App')
 app.configure(background='white')
-icon = PhotoImage(file='main_logo.png')
+icon = PhotoImage(file='images/main_logo.png')
 app.iconphoto(True, icon)
 app.geometry('1200x700')
 app.resizable(False, False)
@@ -62,35 +62,35 @@ def getting_weather():
         # changing images depended on weather
 
         if condition == 'Rain':
-            rain_img = ImageTk.PhotoImage(Image.open('rain_weather.png'))
+            rain_img = ImageTk.PhotoImage(Image.open('images/rain_weather.png'))
             panel.configure(image=rain_img)
             panel.image = rain_img
         elif condition == 'Clear':
-            clear_img = ImageTk.PhotoImage(Image.open('clear_weather.png'))
+            clear_img = ImageTk.PhotoImage(Image.open('images/clear_weather.png'))
             panel.configure(image=clear_img)
             panel.image = clear_img
         elif condition == 'Clouds': 
-            cloudy_img = ImageTk.PhotoImage(Image.open('cloudy_weather.png'))
+            cloudy_img = ImageTk.PhotoImage(Image.open('images/cloudy_weather.png'))
             panel.configure(image=cloudy_img)
             panel.image = cloudy_img
         elif condition == 'Haze':
-            haze_img = ImageTk.PhotoImage(Image.open('haze_weather.png'))
+            haze_img = ImageTk.PhotoImage(Image.open('images/haze_weather.png'))
             panel.configure(image=haze_img)
             panel.image = haze_img
         elif condition == 'Mist':
-            mist_img = ImageTk.PhotoImage(Image.open('haze_weather.png'))
+            mist_img = ImageTk.PhotoImage(Image.open('images/haze_weather.png'))
             panel.configure(image=mist_img)
             panel.image = mist_img
         elif condition == 'Thunderstorm':
-            thunder_img = ImageTk.PhotoImage(Image.open('thunderstorm_weather.png'))
+            thunder_img = ImageTk.PhotoImage(Image.open('images/thunderstorm_weather.png'))
             panel.configure(image=thunder_img)
             panel.image = thunder_img
         elif condition == 'Snow':
-            snow_img = ImageTk.PhotoImage(Image.open('snow_weather.png'))
+            snow_img = ImageTk.PhotoImage(Image.open('images/snow_weather.png'))
             panel.configure(image=snow_img)
             panel.image = snow_img
         else:
-            main_logo_img = ImageTk.PhotoImage(Image.open('main_logo.png'))
+            main_logo_img = ImageTk.PhotoImage(Image.open('images/main_logo.png'))
             panel.configure(image=main_logo_img)
             panel.image = main_logo_img
 
@@ -100,7 +100,7 @@ def getting_weather():
 
 # Search Box
 
-search_image = PhotoImage(file='search.png')
+search_image = PhotoImage(file='images/search.png')
 search_box = Label(image=search_image, bg='white')
 search_box.place(x=10, y=10)
 
@@ -108,13 +108,13 @@ search_input = Entry(app, justify='center', width=20, font=('poppins',25), bg='#
 search_input.place(x=40, y=30)
 search_input.focus()
 
-search_icon = PhotoImage(file='search_icon.png')
+search_icon = PhotoImage(file='images/search_icon.png')
 search_button = Button(image=search_icon, bg='#404040', activebackground='#404040', border=0, cursor='hand2', command=getting_weather)
 search_button.place(x=390, y=23)
 
 # Logo
 
-logo_img = ImageTk.PhotoImage(Image.open('main_logo.png'))
+logo_img = ImageTk.PhotoImage(Image.open('images/main_logo.png'))
 panel = tk.Label(app, image=logo_img, bg='white')
 panel.place(x=100, y=200)
 
@@ -127,7 +127,7 @@ clock.place(x=30, y=130)
 
 # right box and its values
 
-box_image = Image.open('box.png')
+box_image = Image.open('images/box.png')
 box_image = box_image.resize((500,550))
 bottom_image = ImageTk.PhotoImage(box_image)
 bottom_box = Label(image=bottom_image, bg='white')
